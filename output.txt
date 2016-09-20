@@ -1,0 +1,28 @@
+
+Individuals
++-----+---------------+
+|  ID |      Name     |
++-----+---------------+
+|  I1 |  Maha Idrisi  |
+|  I2 |  Ahmed Idrisi |
+|  I3 |   Rafif Arab  |
+|  I4 |   Ali Idrisi  |
+|  I5 |  Meryam Albar |
+|  I6 |  Sami Dawood  |
+|  I7 | Faisal Dawood |
+|  I8 |  Noura Dawood |
+|  I9 |  Reham Idrisi |
+| I10 | Hassan Idrisi |
+| I11 |  Ibrahim Arab |
+| I12 |  Hala Saleem  |
++-----+---------------+
+
+Families
++----+--------------+--------------+
+| ID | Husband Name |  Wife Name   |
++----+--------------+--------------+
+| F1 | Ahmed Idrisi |  Rafif Arab  |
+| F2 |  Ali Idrisi  | Meryam Albar |
+| F3 | Ibrahim Arab | Hala Saleem  |
+| F4 | Sami Dawood  | Meryam Albar |
++----+--------------+--------------+
