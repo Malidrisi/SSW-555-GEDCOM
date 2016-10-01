@@ -49,7 +49,12 @@ for l in myfile:
 		DateType = words[1]
 
 	elif FoundInd and words[1] in ['FAMC','FAMS']:
-		TempRec = TempRec + [l[2:].strip().replace('@','')]
+	        if DateType == 'DEAT':
+	            TempRec = TempRec + [l[2:].strip().replace('@','')]	            
+	        else:
+	            TempRec = TempRec + ["DeatDate: Alive"]
+	            TempRec = TempRec + [l[2:].strip().replace('@','')]
+	            DateType= 'DEAT'
 
 	
 #find and store Families
@@ -83,9 +88,9 @@ elif TempRec[0][0] == 'F':
 
 # sort Individual list in a table
 IndList = sorted(IndList, key = lambda i:int(i[0].replace('I',"")))
-IndTable = PrettyTable(['ID', 'Name'])
+IndTable = PrettyTable(['ID', 'Name','SEX','Birth Date','Deat Date'])
 for i in IndList:
-    IndTable.add_row([i[0], i[1][5:]])
+    IndTable.add_row([i[0], i[1][5:], i[2][4:],i[3][10:],i[4][10:]])
 
 # sort family list in a table
 FamList = sorted(FamList, key = lambda i:int(i[0].replace('F',"")))
