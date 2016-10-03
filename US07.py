@@ -14,7 +14,7 @@ def age_less_than_150(IndList):
             pass
         else:
             n=n+1
-    print "US07"
+    print "US07 - Less then 150 years old"
     if n == 0:
         print "All individuals are less than 50 years old"    
     else:

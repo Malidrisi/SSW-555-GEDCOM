@@ -1,7 +1,7 @@
 from prettytable import PrettyTable
 import datetime
 from US07 import age_less_than_150
-
+from US29 import ListDeceased
 
 
 tagsL0A = ['HEAD','TRLR','NOTE']
@@ -25,7 +25,7 @@ def getname():
         if person[0] == Item[1]:
             return person[1][5:]
 
-myfile = open('data.ged', 'r')
+myfile = open('/Users/Mahalidrisi/Desktop/SSW555/data.ged', 'r')
 
 for l in myfile:
 	words = l.split()
@@ -112,6 +112,10 @@ print FamTable, "\n"
 
 #US07
 age_less_than_150(IndList)
+
+#US29
+ListDeceased(IndList)
+
 
 wr=open('output.txt','w')
 wr.write("\nIndividuals\n")
