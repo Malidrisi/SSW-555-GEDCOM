@@ -1,5 +1,7 @@
 from prettytable import PrettyTable
 import datetime
+from US07 import age_less_than_150
+
 
 
 tagsL0A = ['HEAD','TRLR','NOTE']
@@ -91,6 +93,7 @@ IndList = sorted(IndList, key = lambda i:int(i[0].replace('I',"")))
 IndTable = PrettyTable(['ID', 'Name','SEX','Birth Date','Deat Date'])
 for i in IndList:
     IndTable.add_row([i[0], i[1][5:], i[2][4:],i[3][10:],i[4][10:]])
+print IndTable	
 
 # sort family list in a table
 FamList = sorted(FamList, key = lambda i:int(i[0].replace('F',"")))
@@ -103,6 +106,12 @@ for Fam in FamList:
         	if Item[0] == 'WIFE':
         	    wife= getname()        				
         FamTable.add_row([Fam[0], hus, wife])			 
+print FamTable, "\n"
+
+#UserStories
+
+#US07
+age_less_than_150(IndList)
 
 wr=open('output.txt','w')
 wr.write("\nIndividuals\n")
