@@ -2,6 +2,8 @@ from prettytable import PrettyTable
 import datetime
 from US07 import age_less_than_150
 from US29 import ListDeceased
+from US01 import get_date
+from US27 import get_age
 
 
 tagsL0A = ['HEAD','TRLR','NOTE']
@@ -115,6 +117,12 @@ age_less_than_150(IndList)
 
 #US29
 ListDeceased(IndList)
+
+#US01
+get_date(IndList)
+
+#US27
+get_age(IndList)
 
 
 wr=open('output.txt','w')
