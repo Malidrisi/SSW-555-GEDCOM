@@ -7,16 +7,19 @@ def getAge(Ind):
     else:
         return ((datetime.datetime.strptime(Ind[4][10:], '%Y-%m-%d').date() - datetime.datetime.strptime(Ind[3][10:], '%Y-%m-%d').date()).days/365)
          
-def age_less_than_150(IndList):
+def age_less_than_150(IndList,flag):
     n=0
     for ind in IndList:
         if getAge(ind) < 150:
             pass
         else:
             n=n+1
-    print "US07 - Less then 150 years old"
-    if n == 0:
-        print "All individuals are less than 50 years old"    
+    if flag == 1:
+        
+        if n == 0:
+            print "All individuals are less than 50 years old", 
+        else:
+            print n, "Individuals are more than 50 years old"
     else:
-        print n, "Individuals are more than 50 years old" 
+        return n
         

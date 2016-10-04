@@ -113,10 +113,14 @@ print FamTable, "\n"
 #UserStories
 
 #US07
-age_less_than_150(IndList)
+print "US07 - Less then 150 years old"
+age_less_than_150(IndList,1)
+
+print "\n"
 
 #US29
-ListDeceased(IndList)
+print "US29 - List deceased"
+ListDeceased(IndList,1)
 
 #US01
 get_date(IndList)
