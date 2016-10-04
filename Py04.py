@@ -4,6 +4,7 @@ from US01 import get_date
 from US03 import birthBeforeDeath
 from US07 import age_less_than_150
 from US27 import get_age
+from US23 import uniqueIndividuals
 from US29 import ListDeceased
 
 tagsL0A = ['HEAD','TRLR','NOTE']
@@ -111,7 +112,7 @@ for Fam in FamList:
 print FamTable, "\n"
 
 #UserStories
-
+"""
 #US01
 print "US01 - Date before current date"
 get_date(IndList)
@@ -130,6 +131,12 @@ age_less_than_150(IndList,1)
 
 print "\n"
 
+#US23
+print "US23 - Unique names and birthdates"
+uniqueIndividuals(IndList)
+
+print "\n"
+
 #US27
 print "US27 - Include individual ages"
 get_age(IndList)
@@ -139,6 +146,9 @@ print "\n"
 #US29
 print "US29 - List deceased"
 ListDeceased(IndList,1)
+
+
+
 
 wr=open('output.txt','w')
 wr.write("\nIndividuals\n")
