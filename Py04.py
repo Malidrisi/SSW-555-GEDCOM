@@ -27,7 +27,11 @@ def getname():
         if person[0] == Item[1]:
             return person[1][5:]
 
+<<<<<<< Updated upstream
 myfile = open('/Users/Mahalidrisi/Desktop/SSW555/data.ged', 'r')
+=======
+myfile = open('/Users/rafifarab/Desktop/GEDCOM/data.ged', 'r')
+>>>>>>> Stashed changes
 
 for l in myfile:
 	words = l.split()
@@ -108,6 +112,7 @@ for Fam in FamList:
         	if Item[0] == 'WIFE':
         	    wife= getname()        				
         FamTable.add_row([Fam[0], hus, wife])			 
+<<<<<<< Updated upstream
 print FamTable, "\n"
 
 #UserStories
@@ -137,6 +142,9 @@ ListDeceased(IndList,1)
 
 
 
+=======
+print IndList
+>>>>>>> Stashed changes
 wr=open('output.txt','w')
 wr.write("\nIndividuals\n")
 wr.write(str(IndTable))
