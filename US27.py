@@ -1,7 +1,6 @@
 import datetime
 
 def get_age(IndList):
-    print "US27"
     for date in (IndList):
         if date[1][:4] == "NAME":
             print "Name: ",date[1][5:]

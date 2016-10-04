@@ -112,9 +112,21 @@ print FamTable, "\n"
 
 #UserStories
 
+#US01
+print "US01 - Date before current date"
+get_date(IndList)
+
+print "\n"
+
 #US07
 print "US07 - Less then 150 years old"
 age_less_than_150(IndList,1)
+
+print "\n"
+
+#US27
+print "US27 - Include individual ages"
+get_age(IndList)
 
 print "\n"
 
@@ -122,11 +134,7 @@ print "\n"
 print "US29 - List deceased"
 ListDeceased(IndList,1)
 
-#US01
-get_date(IndList)
 
-#US27
-get_age(IndList)
 
 
 wr=open('output.txt','w')

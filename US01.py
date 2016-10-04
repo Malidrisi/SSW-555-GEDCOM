@@ -15,7 +15,6 @@ def get_date(IndList):
             continue
         else:
             count = count + 1
-    print "US01"
     if count == 12:
         print "All dates are correct"
     else:
