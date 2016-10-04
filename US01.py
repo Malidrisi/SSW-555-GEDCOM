@@ -18,4 +18,8 @@ def get_date(IndList):
     if count == 12:
         print "All dates are correct"
     else:
+<<<<<<< Updated upstream
         print count , "Error"
+=======
+        print count , "Error"
+>>>>>>> Stashed changes
