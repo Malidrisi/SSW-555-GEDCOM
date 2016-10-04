@@ -1,10 +1,10 @@
 from prettytable import PrettyTable
 import datetime
-from US07 import age_less_than_150
-from US29 import ListDeceased
 from US01 import get_date
+from US03 import birthBeforeDeath
+from US07 import age_less_than_150
 from US27 import get_age
-
+from US29 import ListDeceased
 
 tagsL0A = ['HEAD','TRLR','NOTE']
 tagsL0B = ['INDI','FAM']
@@ -27,11 +27,7 @@ def getname():
         if person[0] == Item[1]:
             return person[1][5:]
 
-<<<<<<< Updated upstream
-myfile = open('/Users/Mahalidrisi/Desktop/SSW555/data.ged', 'r')
-=======
-myfile = open('/Users/rafifarab/Desktop/GEDCOM/data.ged', 'r')
->>>>>>> Stashed changes
+myfile = open('data.ged', 'r')
 
 for l in myfile:
 	words = l.split()
@@ -112,7 +108,6 @@ for Fam in FamList:
         	if Item[0] == 'WIFE':
         	    wife= getname()        				
         FamTable.add_row([Fam[0], hus, wife])			 
-<<<<<<< Updated upstream
 print FamTable, "\n"
 
 #UserStories
@@ -120,6 +115,12 @@ print FamTable, "\n"
 #US01
 print "US01 - Date before current date"
 get_date(IndList)
+
+print "\n"
+
+#US03
+print "US03 - Birth before Death"
+birthBeforeDeath(IndList)
 
 print "\n"
 
@@ -139,12 +140,6 @@ print "\n"
 print "US29 - List deceased"
 ListDeceased(IndList,1)
 
-
-
-
-=======
-print IndList
->>>>>>> Stashed changes
 wr=open('output.txt','w')
 wr.write("\nIndividuals\n")
 wr.write(str(IndTable))
