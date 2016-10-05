@@ -1,6 +1,7 @@
 import datetime 
 
 def birthBeforeDeath(IndList):
+    flag = False
     for date in (IndList):
         if date[4][10:] == "Alive":
             pass
@@ -14,10 +15,6 @@ def birthBeforeDeath(IndList):
             deat_date = datetime.datetime.strptime(date2,'%Y-%m-%d').date()
             if birt_date > deat_date:
                 print "Birth " + str(birt_date) +" should occur before death" + str(deat_date)
-
-
-        
-
-
-
-
+                flag = True
+    if flag == False:
+        print " All births occur before deaths!"
