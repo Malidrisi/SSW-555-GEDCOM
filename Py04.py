@@ -96,7 +96,7 @@ IndList = sorted(IndList, key = lambda i:int(i[0].replace('I',"")))
 IndTable = PrettyTable(['ID', 'Name','SEX','Birth Date','Deat Date'])
 for i in IndList:
     IndTable.add_row([i[0], i[1][5:], i[2][4:],i[3][10:],i[4][10:]])
-print IndTable	
+#print IndTable	
 
 # sort family list in a table
 FamList = sorted(FamList, key = lambda i:int(i[0].replace('F',"")))
@@ -109,50 +109,32 @@ for Fam in FamList:
         	if Item[0] == 'WIFE':
         	    wife= getname()        				
         FamTable.add_row([Fam[0], hus, wife])			 
-print FamTable, "\n"
-
-#UserStories
-
-#US01
-print "US01 - Date before current date"
-get_date(IndList)
-
-print "\n"
-
-#US03
-print "US03 - Birth before Death"
-birthBeforeDeath(IndList)
-
-print "\n"
-
-#US07
-print "US07 - Less then 150 years old"
-age_less_than_150(IndList,1)
-
-print "\n"
-
-#US23
-print "US23 - Unique names and birthdates"
-uniqueIndividuals(IndList)
-
-print "\n"
-
-#US27
-print "US27 - Include individual ages"
-get_age(IndList)
-
-print "\n"
-
-#US29
-print "US29 - List deceased"
-ListDeceased(IndList,1)
-
-
-
+#print FamTable, "\n"
 
 wr=open('output.txt','w')
 wr.write("\nIndividuals\n")
 wr.write(str(IndTable))
 wr.write("\n\nFamilies\n")
 wr.write(str(FamTable))
-wr.close()   
+
+#UserStories
+
+#US01
+get_date(IndList,wr)
+
+#US03
+birthBeforeDeath(IndList,wr)
+
+#US07
+age_less_than_150(IndList,1,wr)
+
+#US23
+uniqueIndividuals(IndList,wr)
+
+#US27
+get_age(IndList,wr)
+
+#US29
+ListDeceased(IndList,1,wr)
+
+wr.close()
