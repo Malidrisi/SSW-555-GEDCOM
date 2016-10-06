@@ -13,10 +13,9 @@ def individual_ages(IndList,wr):
             Today = datetime.datetime.today()
             age = (Today - Date).days/365
             if age < 0:
-                print "ERROR : Birthdate for " + name +" cannot be after " + str(Today)
+                wr.write("ERROR : Birthdate for " + name +" cannot be after " + str(Today))
             else:
-                print "Age : %d" % (age)
-            output=" - Age: %d" % ((datetime.datetime.today() - Date).days/365)
-            wr.write(output)
+                output = " - Age: %d" % ((datetime.datetime.today() - Date).days/365)
+                wr.write(output)
         else:
             wr.write("\nN/A")
