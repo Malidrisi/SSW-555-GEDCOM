@@ -1,4 +1,5 @@
 import datetime
+
 def individual_ages(IndList,wr):
     wr.write("\n\nUS27 - Include individual ages")
     for date in (IndList):
@@ -13,7 +14,7 @@ def individual_ages(IndList,wr):
             Today = datetime.datetime.today()
             age = (Today - Date).days/365
             if age < 0:
-                wr.write("--ERROR : Age cannot be after " + str(Today))
+                wr.write(" --ERROR : Age cannot be after today")
             else:
                 output = " - Age: %d" % ((datetime.datetime.today() - Date).days/365)
                 wr.write(output)
