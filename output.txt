@@ -3,20 +3,12 @@ Individuals
 +-----+---------------+-----+------------+------------+
 |  ID |      Name     | SEX | Birth Date | Deat Date  |
 +-----+---------------+-----+------------+------------+
-<<<<<<< HEAD
-|  I1 |  Maha Idrisi  |  F  | 2017-04-08 |   Alive    |
-=======
-|  I1 |  Maha Idrisi  |  F  | 1992-04-08 |   Alive    |
->>>>>>> origin/master
+|  I1 |  Maha Idrisi  |  F  | 1990-04-08 |   Alive    |
 |  I2 |  Ahmed Idrisi |  M  | 1960-01-13 |   Alive    |
 |  I3 |   Rafif Arab  |  F  | 1965-12-01 |   Alive    |
 |  I4 |   Ali Idrisi  |  M  | 1962-08-07 | 1940-06-11 |
 |  I5 |  Meryam Albar |  F  | 1941-08-12 |   Alive    |
-<<<<<<< HEAD
-|  I6 |  Sami Dawood  |  M  | 1940-04-24 |   Alive    |
-=======
 |  I6 |  Sami Dawood  |  M  | 1860-04-24 |   Alive    |
->>>>>>> origin/master
 |  I7 | Faisal Dawood |  M  | 1970-04-17 |   Alive    |
 |  I8 |  Noura Dawood |  F  | 1965-08-18 |   Alive    |
 |  I9 |  Reham Idrisi |  F  | 1989-09-18 |   Alive    |
@@ -33,16 +25,13 @@ Families
 | F2 |  Ali Idrisi  | Meryam Albar |
 | F3 | Ibrahim Arab | Hala Saleem  |
 | F4 | Sami Dawood  | Meryam Albar |
-<<<<<<< HEAD
-+----+--------------+--------------+
-=======
 +----+--------------+--------------+
 
 US01 - Date before current date
 All dates are correct
 
 US03 - Date before current date
-Birth of Ali Idrisi	1962-08-07 should occur before death1940-06-11
+Birth of Ali Idrisi	1962-08-07 should occur before death 1940-06-11
 
 US07 - Less then 150 years old
 1 is/are more than 50 years old
@@ -51,7 +40,7 @@ US23 - Unique names and birthdates
 All name + birthdate pairs are unique
 
 US27 - Include individual ages
-Name: Maha Idrisi - Age: 24
+Name: Maha Idrisi - Age: 26
 Name: Ahmed Idrisi - Age: 56
 Name: Rafif Arab - Age: 50
 Name: Ali Idrisi - Age: 54
@@ -65,9 +54,4 @@ Name: Ibrahim Arab - Age: 76
 Name: Hala Saleem - Age: 72
 
 US29 - List deceased
-<<<<<<< HEAD
-I4	Ali Idrisi	died in 1962-08-07
->>>>>>> origin/master
-=======
 I4	Ali Idrisi	died in 1940-06-11
->>>>>>> origin/master

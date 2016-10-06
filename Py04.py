@@ -112,7 +112,7 @@ for Fam in FamList:
         FamTable.add_row([Fam[0], hus, wife])			 
 #print FamTable, "\n"
 
-wr=open('output.txt','w')
+wr=open('/Users/rafifarab/Desktop/SSW-555-GEDCOM/output.txt','w')
 wr.write("\nIndividuals\n")
 wr.write(str(IndTable))
 wr.write("\n\nFamilies\n")
