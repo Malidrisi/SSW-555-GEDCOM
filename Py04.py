@@ -1,9 +1,9 @@
 from prettytable import PrettyTable
 import datetime
-from US01 import get_date
+from US01 import date_before_current_date
 from US03 import birthBeforeDeath
 from US07 import age_less_than_150
-from US27 import get_age
+from US27 import individual_ages
 from US23 import uniqueIndividuals
 from US29 import ListDeceased
 
@@ -28,7 +28,7 @@ def getname():
         if person[0] == Item[1]:
             return person[1][5:]
 
-myfile = open('data.ged', 'r')
+myfile = open('/Users/rafifarab/Desktop/SSW-555-GEDCOM/data.ged', 'r')
 
 for l in myfile:
 	words = l.split()
@@ -115,7 +115,7 @@ print FamTable, "\n"
 
 #US01
 print "US01 - Date before current date"
-get_date(IndList)
+date_before_current_date(IndList)
 
 print "\n"
 
@@ -139,7 +139,7 @@ print "\n"
 
 #US27
 print "US27 - Include individual ages"
-get_age(IndList)
+individual_ages(IndList)
 
 print "\n"
 

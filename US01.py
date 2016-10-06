@@ -1,25 +1,26 @@
 import datetime
-
-def get_date(IndList):
-    list = []
+list = []
+def date_before_current_date(IndList):
     Today = str(datetime.datetime.today())
     for date in (IndList):
-        if date[3][:9] == "BIRT Date":
-            Date = str(datetime.datetime.strptime(date[3][10:], '%Y-%m-%d').date())
-            list.append(Date)
+        if date[3][:9] == "BIRT Date" and date[4][10:] == "Alive":
+            my_date = date[3][10:]
+            BirthDate = "Birthdate " + str(datetime.datetime.strptime(my_date,'%Y-%m-%d'))
+            list.append(BirthDate)
         else:
-            print "N/A"
-    
-    for count,i in enumerate(list):
-        if list[count] > Today:
+            my_date = date[4][10:]
+            DeathDate = "Deathdate " + str(datetime.datetime.strptime(my_date,'%Y-%m-%d'))
+            list.append(DeathDate)
+    count = 0
+    for index,i in enumerate(list):
+        if Today > list[index][10:]:
             continue
         else:
-            count = count + 1
-    if count == 12:
+            print list[index][10:]
+            error_date = list[index][10:]
+            count = count+1
+    print "US01"
+    if count == 0:
         print "All dates are correct"
     else:
-<<<<<<< Updated upstream
-        print count , "Error"
-=======
-        print count , "Error"
->>>>>>> Stashed changes
+        print "Error: date ",error_date + " " + "cannot be after " + Today
