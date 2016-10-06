@@ -1,4 +1,4 @@
-def ListDeceased(IndList,flag,wr):
+def ListDeceased(IndList,wr):
     dead =0
     wr.write("\n\nUS29 - List deceased")
 
@@ -7,14 +7,8 @@ def ListDeceased(IndList,flag,wr):
             pass
         else:
             dead = dead +1 
-            if flag == 1:
-                output= "\n" + Ind[0] + "\t" +Ind[1][5:] + "\t"+ "died in " +Ind[4][10:]
-                wr.write(str(output))
+            output= "\n" + Ind[0] + "\t" +Ind[1][5:] + "\t"+ "died in " +Ind[4][10:]
+            wr.write(str(output))
    
     if dead == 0:
-        if flag == 1:
-            wr.write("\nAll Indviduals are alive")
-        else:
-            return "All Indviduals are alive"
-    elif flag == 0:
-        return dead
+        wr.write("\nAll Indviduals are alive")

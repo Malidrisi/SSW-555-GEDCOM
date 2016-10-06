@@ -7,6 +7,7 @@ from US27 import get_age
 from US23 import uniqueIndividuals
 from US29 import ListDeceased
 
+
 tagsL0A = ['HEAD','TRLR','NOTE']
 tagsL0B = ['INDI','FAM']
 tagsL1 = ['NAME','SEX','BIRT','DEAT','FAMC','FAMS','MARR','HUSB','WIFE','CHIL','DIV']
@@ -126,7 +127,7 @@ get_date(IndList,wr)
 birthBeforeDeath(IndList,wr)
 
 #US07
-age_less_than_150(IndList,1,wr)
+age_less_than_150(IndList,wr)
 
 #US23
 uniqueIndividuals(IndList,wr)
@@ -135,6 +136,6 @@ uniqueIndividuals(IndList,wr)
 get_age(IndList,wr)
 
 #US29
-ListDeceased(IndList,1,wr)
+ListDeceased(IndList,wr)
 
 wr.close()
