@@ -1,6 +1,5 @@
 from datetime import date
 import datetime
-
 def date_before_current_date(IndList,wr):
     l = []
     error_date = []
@@ -14,8 +13,7 @@ def date_before_current_date(IndList,wr):
         else:
             dDate = d[4][10:]
             l.append(dDate)
-    count = 0
-    
+    count = 0   
     for index,i in enumerate(l):
         if Today > datetime.datetime.strptime(l[index], '%Y-%m-%d').date():
             continue
