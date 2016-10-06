@@ -1,7 +1,8 @@
 import datetime
-list = []
-def date_before_current_date(IndList):
+def date_before_current_date(IndList,wr):
+    list = []
     Today = str(datetime.datetime.today())
+    wr.write("\n\nUS01 - Date before current date")
     for date in (IndList):
         if date[3][:9] == "BIRT Date" and date[4][10:] == "Alive":
             my_date = date[3][10:]
@@ -19,7 +20,6 @@ def date_before_current_date(IndList):
             print list[index][10:]
             error_date = list[index][10:]
             count = count+1
-    print "US01"
     if count == 0:
         print "All dates are correct"
     else:
