@@ -10,7 +10,7 @@ Individuals
 >>>>>>> origin/master
 |  I2 |  Ahmed Idrisi |  M  | 1960-01-13 |   Alive    |
 |  I3 |   Rafif Arab  |  F  | 1965-12-01 |   Alive    |
-|  I4 |   Ali Idrisi  |  M  | 1940-06-11 | 1962-08-07 |
+|  I4 |   Ali Idrisi  |  M  | 1962-08-07 | 1940-06-11 |
 |  I5 |  Meryam Albar |  F  | 1941-08-12 |   Alive    |
 <<<<<<< HEAD
 |  I6 |  Sami Dawood  |  M  | 1940-04-24 |   Alive    |
@@ -41,8 +41,8 @@ Families
 US01 - Date before current date
 All dates are correct
 
-US01 - Date before current date
-All births occur before deaths!
+US03 - Date before current date
+Birth of Ali Idrisi	1962-08-07 should occur before death1940-06-11
 
 US07 - Less then 150 years old
 1 is/are more than 50 years old
@@ -54,7 +54,7 @@ US27 - Include individual ages
 Name: Maha Idrisi - Age: 24
 Name: Ahmed Idrisi - Age: 56
 Name: Rafif Arab - Age: 50
-Name: Ali Idrisi - Age: 76
+Name: Ali Idrisi - Age: 54
 Name: Meryam Albar - Age: 75
 Name: Sami Dawood - Age: 156
 Name: Faisal Dawood - Age: 46
@@ -65,5 +65,9 @@ Name: Ibrahim Arab - Age: 76
 Name: Hala Saleem - Age: 72
 
 US29 - List deceased
+<<<<<<< HEAD
 I4	Ali Idrisi	died in 1962-08-07
+>>>>>>> origin/master
+=======
+I4	Ali Idrisi	died in 1940-06-11
 >>>>>>> origin/master

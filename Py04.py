@@ -121,9 +121,6 @@ wr.write(str(FamTable))
 #UserStories
 
 #US01
-date_before_current_date(IndList)
-
-print "\n"
 date_before_current_date(IndList,wr)
 
 #US03
@@ -136,9 +133,7 @@ age_less_than_150(IndList,wr)
 uniqueIndividuals(IndList,wr)
 
 #US27
-print "US27 - Include individual ages"
 individual_ages(IndList,wr)
-print "\n"
 
 #US29
 ListDeceased(IndList,wr)

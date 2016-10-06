@@ -2,7 +2,7 @@ import datetime
 
 def birthBeforeDeath(IndList,wr):
     flag = False
-    wr.write("\n\nUS01 - Date before current date\n")
+    wr.write("\n\nUS03 - Date before current date\n")
     for date in (IndList):
         if date[4][10:] == "Alive":
             pass
@@ -15,7 +15,7 @@ def birthBeforeDeath(IndList,wr):
             date2 = date[4][10:].strip()
             deat_date = datetime.datetime.strptime(date2,'%Y-%m-%d').date()
             if birt_date > deat_date:
-                output = "Birth " + str(birt_date) +" should occur before death" + str(deat_date)
+                output = "Birth of "+ name + "\t" + str(birt_date) + " should occur before death " + str(deat_date)
                 wr.write(output)
                 flag = True
     if flag == False:
