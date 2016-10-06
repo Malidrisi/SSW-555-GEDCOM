@@ -1,6 +1,7 @@
 import datetime
 def date_before_current_date(IndList,wr):
     list = []
+    error_date = []
     Today = str(datetime.datetime.today())
     wr.write("\n\nUS01 - Date before current date")
     for date in (IndList):
@@ -17,9 +18,11 @@ def date_before_current_date(IndList,wr):
         if Today > list[index][10:]:
             continue
         else:
-            error_date = list[index][10:]
+            error_date = error_date + [list[index][10:]]
             count = count+1
     if count == 0:
         wr.write ("\nAll dates are correct")
     else:
-        wr.write("\nError: date ",error_date + " " + "cannot be after " + Today)
+        numb_of_ind = str(count)
+        output = "\n" + numb_of_ind + " date are after " + Today + " date " + str(error_date)
+        wr.write(output)
