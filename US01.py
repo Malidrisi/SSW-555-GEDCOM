@@ -17,7 +17,6 @@ def date_before_current_date(IndList,wr):
         if Today > list[index][10:]:
             continue
         else:
-            print list[index][10:]
             error_date = list[index][10:]
             count = count+1
     if count == 0:
