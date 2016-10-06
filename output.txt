@@ -8,7 +8,7 @@ Individuals
 |  I3 |   Rafif Arab  |  F  | 1965-12-01 |   Alive    |
 |  I4 |   Ali Idrisi  |  M  | 1940-06-11 | 1962-08-07 |
 |  I5 |  Meryam Albar |  F  | 1941-08-12 |   Alive    |
-|  I6 |  Sami Dawood  |  M  | 1940-04-24 |   Alive    |
+|  I6 |  Sami Dawood  |  M  | 1860-04-24 |   Alive    |
 |  I7 | Faisal Dawood |  M  | 1970-04-17 |   Alive    |
 |  I8 |  Noura Dawood |  F  | 1965-08-18 |   Alive    |
 |  I9 |  Reham Idrisi |  F  | 1989-09-18 |   Alive    |
@@ -34,7 +34,7 @@ US01 - Date before current date
 All births occur before deaths!
 
 US07 - Less then 150 years old
-All individuals are less than 50 years old
+1 is/are more than 50 years old
 
 US23 - Unique names and birthdates
 All name + birthdate pairs are unique
@@ -45,7 +45,7 @@ Name: Ahmed Idrisi - Age: 56
 Name: Rafif Arab - Age: 50
 Name: Ali Idrisi - Age: 76
 Name: Meryam Albar - Age: 75
-Name: Sami Dawood - Age: 76
+Name: Sami Dawood - Age: 156
 Name: Faisal Dawood - Age: 46
 Name: Noura Dawood - Age: 51
 Name: Reham Idrisi - Age: 27

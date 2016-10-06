@@ -9,14 +9,14 @@ def getAge(Ind):
          
 def age_less_than_150(IndList,wr):
     n=0
-    wr.write("\n\nUS07 - Less then 150 years old")
+    wr.write("\n\nUS07 - Less then 150 years old\n")
     for ind in IndList:
         if getAge(ind) < 150:
             pass
         else:
             n=n+1
     if n == 0:
-        wr.write("\nAll individuals are less than 50 years old")
+        wr.write("All individuals are less than 50 years old")
     else:
-        output= "\n",n, "Individuals are more than 50 years old"
+        output= str(n) + " is/are more than 50 years old"
         wr.write(output)
