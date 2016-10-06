@@ -21,6 +21,6 @@ def date_before_current_date(IndList,wr):
             error_date = list[index][10:]
             count = count+1
     if count == 0:
-        print "All dates are correct"
+        wr.write ("\nAll dates are correct")
     else:
-        print "Error: date ",error_date + " " + "cannot be after " + Today
+        wr.write("\nError: date ",error_date + " " + "cannot be after " + Today)
