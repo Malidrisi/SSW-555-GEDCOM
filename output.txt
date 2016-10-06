@@ -17,6 +17,9 @@ Individuals
 | I12 |  Hala Saleem  |  F  | 1943-12-28 |   Alive    |
 | I13 |   Renad Arab  |  F  | 2017-12-01 |   Alive    |
 | I14 |  Faisal Arab  |  M  | 2018-11-05 |   Alive    |
+| I15 |  Faisal Arab  |  M  | 2018-11-05 |   Alive    |
+| I16 |   Renad Arab  |  F  | 2017-12-01 |   Alive    |
+| I17 |   Rayan Arab  |  M  | 2013-12-01 | 2014-06-11 |
 +-----+---------------+-----+------------+------------+
 
 Families
@@ -30,16 +33,17 @@ Families
 +----+--------------+--------------+
 
 US01 - Date before current date
-2 date are after 2016-10-06['2017-12-01', '2018-11-05']
+4 date are after 2016-10-06['2017-12-01', '2018-11-05', '2018-11-05', '2017-12-01']
 
-US03 - Date before current date
+US03 - Birth before death
 Birth of Ali Idrisi	1962-08-07 should occur before death 1940-06-11
 
 US07 - Less then 150 years old
 1 is/are more than 50 years old
 
 US23 - Unique names and birthdates
-All name + birthdate pairs are unique
+Repeated Name Faisal Arab and Birthdate 2018-11-05
+Repeated Name Renad Arab and Birthdate 2017-12-01
 
 US27 - Include individual ages
 Name: Maha Idrisi - Age: 26
@@ -54,8 +58,12 @@ Name: Reham Idrisi - Age: 27
 Name: Hassan Idrisi - Age: 31
 Name: Ibrahim Arab - Age: 76
 Name: Hala Saleem - Age: 72
-Name: Renad Arab--ERROR : Age cannot be after 2016-10-06 14:09:45.896726
-Name: Faisal Arab--ERROR : Age cannot be after 2016-10-06 14:09:45.896757
+Name: Renad Arab--ERROR : Age cannot be after 2016-10-06 14:23:54.812337
+Name: Faisal Arab--ERROR : Age cannot be after 2016-10-06 14:23:54.812367
+Name: Faisal Arab--ERROR : Age cannot be after 2016-10-06 14:23:54.812389
+Name: Renad Arab--ERROR : Age cannot be after 2016-10-06 14:23:54.812411
+Name: Rayan Arab - Age: 2
 
 US29 - List deceased
 I4	Ali Idrisi	died in 1940-06-11
+I17	Rayan Arab	died in 2014-06-11

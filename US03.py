@@ -2,7 +2,7 @@ import datetime
 
 def birthBeforeDeath(IndList,wr):
     flag = False
-    wr.write("\n\nUS03 - Date before current date\n")
+    wr.write("\n\nUS03 - Birth before death\n")
     for date in (IndList):
         if date[4][10:] == "Alive":
             pass
