@@ -30,7 +30,7 @@ Families
 +----+--------------+--------------+
 
 US01 - Date before current date
-2 date are after 2016-10-06 12:12:11.713136 date ['2017-12-01 00:00:00', '2018-11-05 00:00:00']
+2 date are after 2016-10-06['2017-12-01', '2018-11-05']
 
 US03 - Date before current date
 Birth of Ali Idrisi	1962-08-07 should occur before death 1940-06-11
@@ -54,8 +54,8 @@ Name: Reham Idrisi - Age: 27
 Name: Hassan Idrisi - Age: 31
 Name: Ibrahim Arab - Age: 76
 Name: Hala Saleem - Age: 72
-Name: Renad Arab--ERROR : Age cannot be after 2016-10-06 12:12:11.716000
-Name: Faisal Arab--ERROR : Age cannot be after 2016-10-06 12:12:11.716030
+Name: Renad Arab--ERROR : Age cannot be after 2016-10-06 14:09:45.896726
+Name: Faisal Arab--ERROR : Age cannot be after 2016-10-06 14:09:45.896757
 
 US29 - List deceased
 I4	Ali Idrisi	died in 1940-06-11
