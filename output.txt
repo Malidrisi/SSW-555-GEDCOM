@@ -33,13 +33,13 @@ Families
 +----+--------------+--------------+
 
 US01 - Date before current date
-4 date are after 2016-10-06['2017-12-01', '2018-11-05', '2018-11-05', '2017-12-01']
+4 date are after 2016-10-11['2017-12-01', '2018-11-05', '2018-11-05', '2017-12-01']
 
 US03 - Birth before death
 Birth of Ali Idrisi	1962-08-07 should occur before death 1940-06-11
 
 US07 - Less then 150 years old
-1 is/are more than 50 years old
+I6	Sami Dawood is more than 50 years old
 
 US23 - Unique names and birthdates
 Repeated Name Faisal Arab and Birthdate 2018-11-05

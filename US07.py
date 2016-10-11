@@ -15,8 +15,8 @@ def age_less_than_150(IndList,wr):
             pass
         else:
             n=n+1
+            output= ind[0] + "\t" +ind[1][5:] + " is more than 50 years old"
+            wr.write(output)
+
     if n == 0:
         wr.write("All individuals are less than 50 years old")
-    else:
-        output= str(n) + " is/are more than 50 years old"
-        wr.write(output)
