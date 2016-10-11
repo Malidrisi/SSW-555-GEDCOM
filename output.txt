@@ -41,6 +41,18 @@ Birth of Ali Idrisi	1962-08-07 should occur before death 1940-06-11
 US07 - Less then 150 years old
 I6	Sami Dawood is more than 50 years old
 
+US16 - Male Last Names
+Idrisi
+Idrisi
+Dawood
+Dawood
+Idrisi
+Arab
+Arab
+Arab
+Arab
+
+
 US23 - Unique names and birthdates
 Repeated Name Faisal Arab and Birthdate 2018-11-05
 Repeated Name Renad Arab and Birthdate 2017-12-01

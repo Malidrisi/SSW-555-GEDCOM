@@ -6,6 +6,7 @@ from US07 import age_less_than_150
 from US27 import individual_ages
 from US23 import uniqueIndividuals
 from US29 import ListDeceased
+from US16 import male_LastName
 
 
 tagsL0A = ['HEAD','TRLR','NOTE']
@@ -128,6 +129,9 @@ birthBeforeDeath(IndList,wr)
 
 #US07
 age_less_than_150(IndList,wr)
+
+#US16
+male_LastName(IndList,wr)
 
 #US23
 uniqueIndividuals(IndList,wr)
