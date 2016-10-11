@@ -1,4 +1,3 @@
-
 def male_LastName(IndList,wr):
     n=0
     wr.write("\n\nUS16 - Male Last Names\n")
