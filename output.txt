@@ -18,8 +18,10 @@ Individuals
 | I13 |   Renad Arab  |  F  | 2017-12-01 |   Alive    |
 | I14 |  Faisal Arab  |  M  | 2018-11-05 |   Alive    |
 | I15 |  Faisal Arab  |  M  | 2018-11-05 |   Alive    |
-| I16 |   Renad Arab  |  F  | 2017-12-01 |   Alive    |
+| I15 |   Renad Arab  |  F  | 2017-12-01 |   Alive    |
 | I17 |   Rayan Arab  |  M  | 2013-12-01 | 2014-06-11 |
+| I17 | Mohammed Arab |  M  | 2016-11-09 |   Alive    |
+| I18 |   Sara Arab   |  F  | 2016-10-20 |   Alive    |
 +-----+---------------+-----+------------+------------+
 
 Families
@@ -33,7 +35,7 @@ Families
 +----+--------------+--------------+
 
 US01 - Date before current date
-4 date are after 2016-10-12['2017-12-01', '2018-11-05', '2018-11-05', '2017-12-01']
+6 date are after 2016-10-12['2017-12-01', '2018-11-05', '2018-11-05', '2017-12-01', '2016-11-09', '2016-10-20']
 
 US03 - Birth before death
 Birth of Ali Idrisi	1962-08-07 should occur before death 1940-06-11
@@ -51,10 +53,11 @@ Arab
 Arab
 Arab
 Arab
+Arab
 
 
 US22 - Unique IDs
-All IDs are correct
+Error: Duplicate ID for['I15', 'I17']
 
 US23 - Unique names and birthdates
 Repeated Name Faisal Arab and Birthdate 2018-11-05
@@ -78,10 +81,11 @@ Name: Faisal Arab --ERROR : Age cannot be after today
 Name: Faisal Arab --ERROR : Age cannot be after today
 Name: Renad Arab --ERROR : Age cannot be after today
 Name: Rayan Arab - Age: 2
+Name: Mohammed Arab --ERROR : Age cannot be after today
+Name: Sara Arab --ERROR : Age cannot be after today
 
 US29 - List deceased
 I4	Ali Idrisi	died in 1940-06-11
 I17	Rayan Arab	died in 2014-06-11
 
-US38  - Upcoming Birthdays
-No upcoming birthdays
+US38  - Upcoming BirthdaysUpcoming birthdays['2016-11-09', '2016-10-20']
