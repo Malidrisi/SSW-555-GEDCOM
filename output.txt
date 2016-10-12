@@ -19,7 +19,7 @@ Individuals
 | I14 |  Faisal Arab  |  M  | 2018-11-05 |   Alive    |
 | I15 |  Faisal Arab  |  M  | 2018-11-05 |   Alive    |
 | I16 |   Renad Arab  |  F  | 2017-12-01 |   Alive    |
-| I17 |   Rayan Arab  |  M  | 2013-12-01 | 2014-06-11 |
+| I17 |   Rayan Arab  |  M  | 2013-12-01 | 2016-06-11 |
 +-----+---------------+-----+------------+------------+
 
 Families
@@ -81,7 +81,10 @@ Name: Rayan Arab - Age: 2
 
 US29 - List deceased
 I4	Ali Idrisi	died in 1940-06-11
-I17	Rayan Arab	died in 2014-06-11
+I17	Rayan Arab	died in 2016-06-11
+
+US36 - ListRecentDeaths
+I17	Rayan Arab	died in 2016-06-11
 
 US38  - Upcoming Birthdays
 No upcoming birthdays

@@ -9,6 +9,7 @@ from US23 import uniqueIndividuals
 from US29 import ListDeceased
 from US16 import male_LastName
 from US38 import UpcomingBirthday
+from US36 import ListRecentDeaths
 
 
 tagsL0A = ['HEAD','TRLR','NOTE']
@@ -32,7 +33,7 @@ def getname():
         if person[0] == Item[1]:
             return person[1][5:]
 
-myfile = open('/Users/rafifarab/Desktop/SSW-555-GEDCOM/data.ged', 'r')
+myfile = open('data.ged', 'r')
 
 for l in myfile:
 	words = l.split()
@@ -115,7 +116,7 @@ for Fam in FamList:
         FamTable.add_row([Fam[0], hus, wife])			 
 #print FamTable, "\n"
 
-wr=open('/Users/rafifarab/Desktop/SSW-555-GEDCOM/output.txt','w')
+wr=open('output.txt','w')
 wr.write("\nIndividuals\n")
 wr.write(str(IndTable))
 wr.write("\n\nFamilies\n")
@@ -146,6 +147,9 @@ individual_ages(IndList,wr)
 
 #US29
 ListDeceased(IndList,wr)
+
+#US36
+ListRecentDeaths(IndList,wr)
 
 #US38
 UpcomingBirthday(IndList,wr)
