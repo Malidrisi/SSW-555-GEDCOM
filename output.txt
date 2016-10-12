@@ -18,15 +18,10 @@ Individuals
 | I13 |   Renad Arab  |  F  | 2017-12-01 |   Alive    |
 | I14 |  Faisal Arab  |  M  | 2018-11-05 |   Alive    |
 | I15 |  Faisal Arab  |  M  | 2018-11-05 |   Alive    |
-<<<<<<< HEAD
-| I16 |   Renad Arab  |  F  | 2017-12-01 |   Alive    |
-| I17 |   Rayan Arab  |  M  | 2013-12-01 | 2016-06-11 |
-=======
 | I15 |   Renad Arab  |  F  | 2017-12-01 |   Alive    |
-| I17 |   Rayan Arab  |  M  | 2013-12-01 | 2014-06-11 |
+| I17 |   Rayan Arab  |  M  | 2013-12-01 | 2016-06-11 |
 | I17 | Mohammed Arab |  M  | 2016-11-09 |   Alive    |
 | I18 |   Sara Arab   |  F  | 2016-10-20 |   Alive    |
->>>>>>> origin/master
 +-----+---------------+-----+------------+------------+
 
 Families
@@ -96,4 +91,5 @@ I17	Rayan Arab	died in 2016-06-11
 US36 - ListRecentDeaths
 I17	Rayan Arab	died in 2016-06-11
 
-US38  - Upcoming BirthdaysUpcoming birthdays['2016-11-09', '2016-10-20']
+US38  - Upcoming Birthdays
+Upcoming birthdays['2016-11-09', '2016-10-20']

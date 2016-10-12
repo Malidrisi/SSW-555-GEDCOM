@@ -26,5 +26,5 @@ def UpcomingBirthday(IndList,wr):
     if flag == False:
         wr.write ("\nNo upcoming birthdays")
     else:
-        output = "Upcoming birthdays" + str(DOB)
+        output = "\nUpcoming birthdays" + str(DOB)
         wr.write(output)
