@@ -4,9 +4,11 @@ from US01 import date_before_current_date
 from US03 import birthBeforeDeath
 from US07 import age_less_than_150
 from US27 import individual_ages
+from US22 import UniqueIDs
 from US23 import uniqueIndividuals
 from US29 import ListDeceased
 from US16 import male_LastName
+from US38 import UpcomingBirthday
 
 
 tagsL0A = ['HEAD','TRLR','NOTE']
@@ -30,7 +32,7 @@ def getname():
         if person[0] == Item[1]:
             return person[1][5:]
 
-myfile = open('data.ged', 'r')
+myfile = open('/Users/rafifarab/Desktop/SSW-555-GEDCOM/data.ged', 'r')
 
 for l in myfile:
 	words = l.split()
@@ -113,7 +115,7 @@ for Fam in FamList:
         FamTable.add_row([Fam[0], hus, wife])			 
 #print FamTable, "\n"
 
-wr=open('output.txt','w')
+wr=open('/Users/rafifarab/Desktop/SSW-555-GEDCOM/output.txt','w')
 wr.write("\nIndividuals\n")
 wr.write(str(IndTable))
 wr.write("\n\nFamilies\n")
@@ -133,6 +135,9 @@ age_less_than_150(IndList,wr)
 #US16
 male_LastName(IndList,wr)
 
+#US22
+UniqueIDs(IndList,wr)
+
 #US23
 uniqueIndividuals(IndList,wr)
 
@@ -141,5 +146,8 @@ individual_ages(IndList,wr)
 
 #US29
 ListDeceased(IndList,wr)
+
+#US38
+UpcomingBirthday(IndList,wr)
 
 wr.close()
