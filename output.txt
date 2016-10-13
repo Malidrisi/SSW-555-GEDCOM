@@ -14,7 +14,7 @@ Individuals
 |  I9 |  Reham Idrisi |  F  | 1989-09-18 |   Alive    |
 | I10 | Hassan Idrisi |  M  | 1985-05-14 |   Alive    |
 | I11 |  Ibrahim Arab |  M  | 1940-08-20 |   Alive    |
-| I12 |  Hala Saleem  |  F  | 1943-12-28 |   Alive    |
+| I12 |  Hala Saleem  |  F  | 1984-01-01 |   Alive    |
 | I13 |   Renad Arab  |  F  | 2017-12-01 |   Alive    |
 | I14 |  Faisal Arab  |  M  | 2018-11-05 |   Alive    |
 | I15 |  Faisal Arab  |  M  | 2018-11-05 |   Alive    |
@@ -36,6 +36,11 @@ Families
 
 US01 - Date before current date
 6 date are after 2016-10-12['2017-12-01', '2018-11-05', '2018-11-05', '2017-12-01', '2016-11-09', '2016-10-20']
+
+US02 - Birth before Marriage
+Birth of Ali Idrisi occurs after his marriage
+Birth of Hala Saleem occurs after her marriage
+
 
 US03 - Birth before death
 Birth of Ali Idrisi	1962-08-07 should occur before death 1940-06-11
@@ -75,7 +80,7 @@ Name: Noura Dawood - Age: 51
 Name: Reham Idrisi - Age: 27
 Name: Hassan Idrisi - Age: 31
 Name: Ibrahim Arab - Age: 76
-Name: Hala Saleem - Age: 72
+Name: Hala Saleem - Age: 32
 Name: Renad Arab --ERROR : Age cannot be after today
 Name: Faisal Arab --ERROR : Age cannot be after today
 Name: Faisal Arab --ERROR : Age cannot be after today

@@ -1,6 +1,7 @@
 from prettytable import PrettyTable
 import datetime
 from US01 import date_before_current_date
+from US02 import marrBeforeBirth
 from US03 import birthBeforeDeath
 from US07 import age_less_than_150
 from US27 import individual_ages
@@ -101,7 +102,6 @@ IndList = sorted(IndList, key = lambda i:int(i[0].replace('I',"")))
 IndTable = PrettyTable(['ID', 'Name','SEX','Birth Date','Deat Date'])
 for i in IndList:
     IndTable.add_row([i[0], i[1][5:], i[2][4:],i[3][10:],i[4][10:]])
-#print IndTable	
 
 # sort family list in a table
 FamList = sorted(FamList, key = lambda i:int(i[0].replace('F',"")))
@@ -113,9 +113,18 @@ for Fam in FamList:
         	    hus= getname()
         	if Item[0] == 'WIFE':
         	    wife= getname()        				
-        FamTable.add_row([Fam[0], hus, wife])			 
-#print FamTable, "\n"
-
+        FamTable.add_row([Fam[0], hus, wife])	
+'''
+for fam in FamList:		 
+	#print fam[6], "\n"
+	print fam
+	for i in range(len(fam)):
+		if (fam[i][0:4]) == "MARR":
+			print ("ok")
+			print (fam[i][0:5])
+			print fam[i][10:]
+	print "\n"
+'''
 wr=open('output.txt','w')
 wr.write("\nIndividuals\n")
 wr.write(str(IndTable))
@@ -126,6 +135,9 @@ wr.write(str(FamTable))
 
 #US01
 date_before_current_date(IndList,wr)
+
+#US02
+marrBeforeBirth(IndList, FamList, wr)
 
 #US03
 birthBeforeDeath(IndList,wr)
