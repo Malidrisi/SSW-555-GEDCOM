@@ -11,6 +11,4 @@ def fewerThan15Siblings(FamList, wr):
             wr.write("Family " + famID + " has more than 15 children! \n")
             Flag = True
         wr.write(str(count) + " siblings in family " + famID + "\n")
-    return Flag
-
-        
+    return Flag      
