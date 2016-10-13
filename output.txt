@@ -35,7 +35,7 @@ Families
 +----+--------------+--------------+
 
 US01 - Date before current date
-6 date are after 2016-10-12['2017-12-01', '2018-11-05', '2018-11-05', '2017-12-01', '2016-11-09', '2016-10-20']
+6 date are after 2016-10-13['2017-12-01', '2018-11-05', '2018-11-05', '2017-12-01', '2016-11-09', '2016-10-20']
 
 US02 - Birth before Marriage
 Birth of Ali Idrisi occurs after his marriage
@@ -47,6 +47,11 @@ Birth of Ali Idrisi	1962-08-07 should occur before death 1940-06-11
 
 US07 - Less then 150 years old
 I6	Sami Dawood is more than 50 years old
+
+US10 - Marriage After 14
+Ali Idrisi got married before he turned 14
+Hala Saleem got married before she turned 14
+
 
 US16 - Male Last Names
 Idrisi

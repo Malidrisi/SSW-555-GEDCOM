@@ -4,6 +4,7 @@ from US01 import date_before_current_date
 from US02 import marrBeforeBirth
 from US03 import birthBeforeDeath
 from US07 import age_less_than_150
+from US10 import marriageAfter14
 from US27 import individual_ages
 from US22 import UniqueIDs
 from US23 import uniqueIndividuals
@@ -134,6 +135,9 @@ birthBeforeDeath(IndList,wr)
 
 #US07
 age_less_than_150(IndList,wr)
+
+#US10
+marriageAfter14(IndList, FamList, wr)
 
 #US16
 male_LastName(IndList,wr)
