@@ -24,6 +24,5 @@ def marrBeforeBirth(IndList, FamList, wr):
         elif wifeBirt > marrDate:
             wr.write("Birth of " + wifeName + " occurs after her marriage\n")
             Flag = True
-
     if Flag == False:
         Print("All Births Occur Before Marriage!")
