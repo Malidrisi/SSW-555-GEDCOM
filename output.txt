@@ -53,6 +53,14 @@ Ali Idrisi got married before he turned 14
 Hala Saleem got married before she turned 14
 
 
+US15 - Fewer than 15 siblings
+3 siblings in family F1
+1 siblings in family F2
+Family F3 has more than 15 children! 
+16 siblings in family F3
+2 siblings in family F4
+
+
 US16 - Male Last Names
 Idrisi
 Idrisi
