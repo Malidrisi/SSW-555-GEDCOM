@@ -29,4 +29,5 @@ def marriageAfter14(IndList, FamList, wr):
             wr.write(wifeName + " got married before she turned 14\n")
             Flag = True
     if Flag == False:
-        Print("All Marriages occured after the individual turned 14!")
+        wr.write("All Marriages occured after the individual turned 14!")
+    return Flag
