@@ -114,17 +114,7 @@ for Fam in FamList:
         	if Item[0] == 'WIFE':
         	    wife= getname()        				
         FamTable.add_row([Fam[0], hus, wife])	
-'''
-for fam in FamList:		 
-	#print fam[6], "\n"
-	print fam
-	for i in range(len(fam)):
-		if (fam[i][0:4]) == "MARR":
-			print ("ok")
-			print (fam[i][0:5])
-			print fam[i][10:]
-	print "\n"
-'''
+
 wr=open('output.txt','w')
 wr.write("\nIndividuals\n")
 wr.write(str(IndTable))
