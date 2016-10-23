@@ -4,8 +4,8 @@ Individuals
 |  ID |      Name     | SEX | Birth Date | Deat Date  |
 +-----+---------------+-----+------------+------------+
 |  I1 |  Maha Idrisi  |  F  | 1990-04-08 |   Alive    |
-|  I2 |  Ahmed Idrisi |  M  | 1960-01-13 |   Alive    |
-|  I3 |   Rafif Arab  |  F  | 1965-12-01 |   Alive    |
+|  I2 |  Ahmed Idrisi |  F  | 1960-01-13 |   Alive    |
+|  I3 |   Rafif Arab  |  M  | 1965-12-01 |   Alive    |
 |  I4 |   Ali Idrisi  |  M  | 1962-08-07 | 1940-06-11 |
 |  I5 |  Meryam Albar |  F  | 1941-08-12 |   Alive    |
 |  I6 |  Sami Dawood  |  M  | 1860-04-24 |   Alive    |
@@ -35,7 +35,7 @@ Families
 +----+--------------+--------------+
 
 US01 - Date before current date
-6 date are after 2016-10-13['2017-12-01', '2018-11-05', '2018-11-05', '2017-12-01', '2016-11-09', '2016-10-20']
+5 date are after 2016-10-22['2017-12-01', '2018-11-05', '2018-11-05', '2017-12-01', '2016-11-09']
 
 US02 - Birth before Marriage
 Birth of Ali Idrisi occurs after his marriage
@@ -56,13 +56,12 @@ Hala Saleem got married before she turned 14
 US15 - Fewer than 15 siblings
 3 siblings in family F1
 1 siblings in family F2
-Family F3 has more than 15 children! 
-16 siblings in family F3
+5 siblings in family F3
 2 siblings in family F4
 
 
 US16 - Male Last Names
-Idrisi
+Arab
 Idrisi
 Dawood
 Dawood
@@ -73,6 +72,10 @@ Arab
 Arab
 Arab
 
+
+US21  - Correct gender for role
+['Ahmed Idrisi', 'F'] is incorrect gender, Husband has to be male
+['Rafif Arab', 'M'] is incorrect gender, Wife has to be female
 
 US22 - Unique IDs
 Error: Duplicate ID for['I15', 'I17']
@@ -100,14 +103,17 @@ Name: Faisal Arab --ERROR : Age cannot be after today
 Name: Renad Arab --ERROR : Age cannot be after today
 Name: Rayan Arab - Age: 2
 Name: Mohammed Arab --ERROR : Age cannot be after today
-Name: Sara Arab --ERROR : Age cannot be after today
+Name: Sara Arab - Age: 0
 
 US29 - List deceased
 I4	Ali Idrisi	died in 1940-06-11
 I17	Rayan Arab	died in 2016-06-11
 
+US31 - All Living Singles
+Individual who are over 30 and single ['Faisal Dawood', 'Noura Dawood', 'Hassan Idrisi']
+
 US36 - ListRecentDeaths
 I17	Rayan Arab	died in 2016-06-11
 
 US38  - Upcoming Birthdays
-Upcoming birthdays['2016-11-09', '2016-10-20']
+Upcoming birthdays['2016-11-09']

@@ -6,14 +6,15 @@ from US03 import birthBeforeDeath
 from US07 import age_less_than_150
 from US10 import marriageAfter14
 from US15 import fewerThan15Siblings
-from US27 import individual_ages
+from US16 import male_LastName
+from US21 import correctgender
 from US22 import UniqueIDs
 from US23 import uniqueIndividuals
+from US27 import individual_ages
 from US29 import ListDeceased
-from US16 import male_LastName
+from US31 import all_living_singles
 from US38 import UpcomingBirthday
 from US36 import ListRecentDeaths
-
 
 tagsL0A = ['HEAD','TRLR','NOTE']
 tagsL0B = ['INDI','FAM']
@@ -146,6 +147,10 @@ fewerThan15Siblings(FamList, wr)
 #US16
 male_LastName(IndList,wr)
 
+#US21
+
+correctgender(FamList,IndList,wr)
+
 #US22
 UniqueIDs(IndList,wr)
 
@@ -157,6 +162,9 @@ individual_ages(IndList,wr)
 
 #US29
 ListDeceased(IndList,wr)
+
+#US31
+all_living_singles(IndList,wr)
 
 #US36
 ListRecentDeaths(IndList,wr)
