@@ -19,7 +19,7 @@ Individuals
 | I14 |  Faisal Arab  |  M  | 2018-11-05 |   Alive    |
 | I15 |  Faisal Arab  |  M  | 2018-11-05 |   Alive    |
 | I15 |   Renad Arab  |  F  | 2017-12-01 |   Alive    |
-| I17 |   Rayan Arab  |  M  | 2013-12-01 | 2016-06-11 |
+| I17 |   Rayan Arab  |  M  | 2013-12-01 | 2016-10-11 |
 | I17 | Mohammed Arab |  M  | 2016-11-09 |   Alive    |
 | I18 |   Sara Arab   |  F  | 2016-10-20 |   Alive    |
 +-----+---------------+-----+------------+------------+
@@ -35,7 +35,7 @@ Families
 +----+--------------+--------------+
 
 US01 - Date before current date
-6 date are after 2016-10-13['2017-12-01', '2018-11-05', '2018-11-05', '2017-12-01', '2016-11-09', '2016-10-20']
+5 date are after 2016-10-22['2017-12-01', '2018-11-05', '2018-11-05', '2017-12-01', '2016-11-09']
 
 US02 - Birth before Marriage
 Birth of Ali Idrisi occurs after his marriage
@@ -56,8 +56,7 @@ Hala Saleem got married before she turned 14
 US15 - Fewer than 15 siblings
 3 siblings in family F1
 1 siblings in family F2
-Family F3 has more than 15 children! 
-16 siblings in family F3
+5 siblings in family F3
 2 siblings in family F4
 
 
@@ -100,14 +99,20 @@ Name: Faisal Arab --ERROR : Age cannot be after today
 Name: Renad Arab --ERROR : Age cannot be after today
 Name: Rayan Arab - Age: 2
 Name: Mohammed Arab --ERROR : Age cannot be after today
-Name: Sara Arab --ERROR : Age cannot be after today
+Name: Sara Arab - Age: 0
 
 US29 - List deceased
 I4	Ali Idrisi	died in 1940-06-11
-I17	Rayan Arab	died in 2016-06-11
+I17	Rayan Arab	died in 2016-10-11
 
-US36 - ListRecentDeaths
-I17	Rayan Arab	died in 2016-06-11
+US36 - List Recent Births
+I18	Sara Arab	was born in 2016-10-20
+
+US36 - List Recent Deaths
+I17	Rayan Arab	died in 2016-10-11
 
 US38  - Upcoming Birthdays
-Upcoming birthdays['2016-11-09', '2016-10-20']
+Upcoming birthdays['2016-11-09']
+
+US39 - List Upcoming Anniversaries
+The Anniversary for family F4 is in 2016-11-03

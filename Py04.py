@@ -13,6 +13,8 @@ from US29 import ListDeceased
 from US16 import male_LastName
 from US38 import UpcomingBirthday
 from US36 import ListRecentDeaths
+from US35 import ListRecentBirths
+from US39 import ListUpcomingAnn
 
 
 tagsL0A = ['HEAD','TRLR','NOTE']
@@ -158,10 +160,16 @@ individual_ages(IndList,wr)
 #US29
 ListDeceased(IndList,wr)
 
+#US35
+ListRecentBirths(IndList,wr)
+
 #US36
 ListRecentDeaths(IndList,wr)
 
 #US38
 UpcomingBirthday(IndList,wr)
+
+#US39
+ListUpcomingAnn(FamList,wr)
 
 wr.close()
