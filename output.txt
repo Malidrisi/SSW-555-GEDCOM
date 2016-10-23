@@ -3,7 +3,7 @@ Individuals
 +-----+---------------+-----+------------+------------+
 |  ID |      Name     | SEX | Birth Date | Deat Date  |
 +-----+---------------+-----+------------+------------+
-|  I1 |  Maha Idrisi  |  F  | 1990-04-08 |   Alive    |
+|  I1 |  Maha Idrisi  |  F  | 1990-10-30 |   Alive    |
 |  I2 |  Ahmed Idrisi |  F  | 1960-01-13 |   Alive    |
 |  I3 |   Rafif Arab  |  M  | 1965-12-01 |   Alive    |
 |  I4 |   Ali Idrisi  |  M  | 1962-08-07 | 1940-06-11 |
@@ -11,17 +11,17 @@ Individuals
 |  I6 |  Sami Dawood  |  M  | 1860-04-24 |   Alive    |
 |  I7 | Faisal Dawood |  M  | 1970-04-17 |   Alive    |
 |  I8 |  Noura Dawood |  F  | 1965-08-18 |   Alive    |
-|  I9 |  Reham Idrisi |  F  | 1989-09-18 |   Alive    |
+|  I9 |  Reham Idrisi |  F  | 1989-11-18 |   Alive    |
 | I10 | Hassan Idrisi |  M  | 1985-05-14 |   Alive    |
 | I11 |  Ibrahim Arab |  M  | 1940-08-20 |   Alive    |
 | I12 |  Hala Saleem  |  F  | 1984-01-01 |   Alive    |
 | I13 |   Renad Arab  |  F  | 2017-12-01 |   Alive    |
-| I14 |  Faisal Arab  |  M  | 2018-10-30 |   Alive    |
+| I14 |  Faisal Arab  |  M  | 2018-09-30 |   Alive    |
 | I15 |  Faisal Arab  |  M  | 2018-11-05 |   Alive    |
-| I15 |   Renad Arab  |  F  | 2017-12-01 |   Alive    |
+| I15 |   Renad Arab  |  F  | 2017-11-01 |   Alive    |
 | I17 |   Rayan Arab  |  M  | 2013-12-01 | 2016-10-11 |
-| I17 | Mohammed Arab |  M  | 2016-11-09 |   Alive    |
-| I18 |   Sara Arab   |  F  | 2016-10-20 |   Alive    |
+| I17 | Mohammed Arab |  M  | 1989-11-09 |   Alive    |
+| I18 |   Sara Arab   |  F  | 2016-12-20 |   Alive    |
 +-----+---------------+-----+------------+------------+
 
 Families
@@ -35,7 +35,7 @@ Families
 +----+--------------+--------------+
 
 US01 - Date before current date
-5 date are after 2016-10-23['2017-12-01', '2018-10-30', '2018-11-05', '2017-12-01', '2016-11-09']
+5 date are after 2016-10-23['2017-12-01', '2018-09-30', '2018-11-05', '2017-11-01', '2016-12-20']
 
 US02 - Birth before Marriage
 Birth of Ali Idrisi occurs after his marriage
@@ -81,7 +81,7 @@ US22 - Unique IDs
 Error: Duplicate ID for['I15', 'I17']
 
 US23 - Unique names and birthdates
-Repeated Name Renad Arab and Birthdate 2017-12-01
+All name + birthdate pairs are unique
 
 US27 - Include individual ages
 Name: Maha Idrisi - Age: 26
@@ -92,7 +92,7 @@ Name: Meryam Albar - Age: 75
 Name: Sami Dawood - Age: 156
 Name: Faisal Dawood - Age: 46
 Name: Noura Dawood - Age: 51
-Name: Reham Idrisi - Age: 27
+Name: Reham Idrisi - Age: 26
 Name: Hassan Idrisi - Age: 31
 Name: Ibrahim Arab - Age: 76
 Name: Hala Saleem - Age: 32
@@ -101,15 +101,15 @@ Name: Faisal Arab --ERROR : Age cannot be after today
 Name: Faisal Arab --ERROR : Age cannot be after today
 Name: Renad Arab --ERROR : Age cannot be after today
 Name: Rayan Arab - Age: 2
-Name: Mohammed Arab --ERROR : Age cannot be after today
-Name: Sara Arab - Age: 0
+Name: Mohammed Arab - Age: 26
+Name: Sara Arab --ERROR : Age cannot be after today
 
 US29 - List deceased
 I4	Ali Idrisi	died in 1940-06-11
 I17	Rayan Arab	died in 2016-10-11
 
 US36 - List Recent Births
-I18	Sara Arab	was born in 2016-10-20
+No one was born recently
 
 US31 - All Living Singles
 Individuals who are over 30 and single ['Faisal Dawood', 'Noura Dawood', 'Hassan Idrisi']
@@ -118,7 +118,7 @@ US36 - List Recent Deaths
 I17	Rayan Arab	died in 2016-10-11
 
 US38  - Upcoming Birthdays
-3 upcoming birthdays ['10-30', '11-05', '11-09']
+3 upcoming birthdays ['1990-10-30', '1989-11-18', '1989-11-09']
 
 US39 - List Upcoming Anniversaries
 The Anniversary for family F4 is in 2016-11-03

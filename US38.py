@@ -18,13 +18,13 @@ def UpcomingBirthday(IndList,wr):
     count = 0
     DOB = []
     for ind in IndList:
-        if GetDate(ind) in monthdays:
-            DOB = DOB + [str(GetDate(ind))]
+        if GetDate(ind) in monthdays and int(now.year) > int(ind[3][10:14]):
+            DOB = DOB + [ind[3][10:]]
             count += 1
         else:
             continue             
     if count == 0:
-        wr.write ("\nNo upcoming birthdays")
+        wr.write ("No upcoming birthdays")
     else:
         output = str(count) + " upcoming birthdays " + str(DOB)
         wr.write(output)
