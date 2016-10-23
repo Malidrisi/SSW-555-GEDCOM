@@ -16,7 +16,7 @@ Individuals
 | I11 |  Ibrahim Arab |  M  | 1940-08-20 |   Alive    |
 | I12 |  Hala Saleem  |  F  | 1984-01-01 |   Alive    |
 | I13 |   Renad Arab  |  F  | 2017-12-01 |   Alive    |
-| I14 |  Faisal Arab  |  M  | 2018-11-05 |   Alive    |
+| I14 |  Faisal Arab  |  M  | 2018-10-30 |   Alive    |
 | I15 |  Faisal Arab  |  M  | 2018-11-05 |   Alive    |
 | I15 |   Renad Arab  |  F  | 2017-12-01 |   Alive    |
 | I17 |   Rayan Arab  |  M  | 2013-12-01 | 2016-10-11 |
@@ -35,7 +35,7 @@ Families
 +----+--------------+--------------+
 
 US01 - Date before current date
-5 date are after 2016-10-22['2017-12-01', '2018-11-05', '2018-11-05', '2017-12-01', '2016-11-09']
+5 date are after 2016-10-23['2017-12-01', '2018-10-30', '2018-11-05', '2017-12-01', '2016-11-09']
 
 US02 - Birth before Marriage
 Birth of Ali Idrisi occurs after his marriage
@@ -81,7 +81,6 @@ US22 - Unique IDs
 Error: Duplicate ID for['I15', 'I17']
 
 US23 - Unique names and birthdates
-Repeated Name Faisal Arab and Birthdate 2018-11-05
 Repeated Name Renad Arab and Birthdate 2017-12-01
 
 US27 - Include individual ages
@@ -119,7 +118,7 @@ US36 - List Recent Deaths
 I17	Rayan Arab	died in 2016-10-11
 
 US38  - Upcoming Birthdays
-Upcoming birthdays['2016-11-09']
+3 upcoming birthdays ['10-30', '11-05', '11-09']
 
 US39 - List Upcoming Anniversaries
 The Anniversary for family F4 is in 2016-11-03
