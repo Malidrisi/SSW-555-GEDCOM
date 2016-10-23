@@ -109,9 +109,11 @@ US29 - List deceased
 I4	Ali Idrisi	died in 1940-06-11
 I17	Rayan Arab	died in 2016-10-11
 
-<<<<<<< HEAD
 US36 - List Recent Births
 I18	Sara Arab	was born in 2016-10-20
+
+US31 - All Living Singles
+Individuals who are over 30 and single ['Faisal Dawood', 'Noura Dawood', 'Hassan Idrisi']
 
 US36 - List Recent Deaths
 I17	Rayan Arab	died in 2016-10-11
@@ -121,13 +123,3 @@ Upcoming birthdays['2016-11-09']
 
 US39 - List Upcoming Anniversaries
 The Anniversary for family F4 is in 2016-11-03
-=======
-US31 - All Living Singles
-Individual who are over 30 and single ['Faisal Dawood', 'Noura Dawood', 'Hassan Idrisi']
-
-US36 - ListRecentDeaths
-I17	Rayan Arab	died in 2016-06-11
-
-US38  - Upcoming Birthdays
-Upcoming birthdays['2016-11-09']
->>>>>>> origin/master

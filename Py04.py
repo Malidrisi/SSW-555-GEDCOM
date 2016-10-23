@@ -164,13 +164,11 @@ individual_ages(IndList,wr)
 #US29
 ListDeceased(IndList,wr)
 
-<<<<<<< HEAD
 #US35
 ListRecentBirths(IndList,wr)
-=======
+
 #US31
 all_living_singles(IndList,wr)
->>>>>>> origin/master
 
 #US36
 ListRecentDeaths(IndList,wr)
@@ -178,11 +176,7 @@ ListRecentDeaths(IndList,wr)
 #US38
 UpcomingBirthday(IndList,wr)
 
-<<<<<<< HEAD
 #US39
 ListUpcomingAnn(FamList,wr)
 
 wr.close()
-=======
-wr.close()
->>>>>>> origin/master
