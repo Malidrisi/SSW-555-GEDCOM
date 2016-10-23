@@ -177,6 +177,6 @@ ListRecentDeaths(IndList,wr)
 UpcomingBirthday(IndList,wr)
 
 #US39
-ListUpcomingAnn(FamList,wr)
+ListUpcomingAnn(FamList,IndList,wr)
 
 wr.close()
