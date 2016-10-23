@@ -148,7 +148,6 @@ fewerThan15Siblings(FamList, wr)
 male_LastName(IndList,wr)
 
 #US21
-
 correctgender(FamList,IndList,wr)
 
 #US22
