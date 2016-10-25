@@ -112,6 +112,11 @@ US29 - List deceased
 I4	Ali Idrisi	died in 1940-06-11
 I17	Rayan Arab	died in 2016-10-11
 
+US30 - List Living Married
+List of living married 
+['Ahmed Idrisi', 'Ibrahim Arab', 'Sami Dawood']
+['Rafif Arab', 'Meryam Albar', 'Hala Saleem', 'Meryam Albar']
+
 US36 - List Recent Births
 No one was born recently
 
