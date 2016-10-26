@@ -35,7 +35,7 @@ Families
 +----+--------------+--------------+
 
 US01 - Date before current date
-5 date are after 2016-10-25['2017-12-01', '2018-09-30', '2018-11-05', '2017-11-01', '2016-12-20']
+5 date are after 2016-10-26['2017-12-01', '2018-09-30', '2018-11-05', '2017-11-01', '2016-12-20']
 
 US02 - Birth before Marriage
 Birth of Ali Idrisi occurs after his marriage
@@ -114,8 +114,7 @@ I17	Rayan Arab	died in 2016-10-11
 
 US30 - List Living Married
 List of living married 
-['Ahmed Idrisi', 'Ibrahim Arab', 'Sami Dawood']
-['Rafif Arab', 'Meryam Albar', 'Hala Saleem', 'Meryam Albar']
+['Ahmed Idrisi', 'Rafif Arab', 'Meryam Albar', 'Ibrahim Arab', 'Hala Saleem', 'Meryam Albar', 'Sami Dawood']
 
 US36 - List Recent Births
 No one was born recently

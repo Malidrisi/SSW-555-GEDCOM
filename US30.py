@@ -1,6 +1,5 @@
 def livingMarried(IndList, FamList, wr):
-    husbName = []
-    wifeName = []
+    living = []
     wr.write("\n\nUS30 - List Living Married\n")
     for fam in FamList:
         for i in range(len(fam)):
@@ -9,10 +8,7 @@ def livingMarried(IndList, FamList, wr):
                 husbId = fam[1][5:]
                 wifeId = fam[2][5:]
         for Ind in IndList:
-            if Ind[0] == husbId:
+            if ((Ind[0] == husbId) or (Ind[0] == wifeId)):
                 if Ind[4][10:] == "Alive":
-                    husbName.append(Ind[1][5:])
-            if Ind[0] == wifeId:
-                if Ind[4][10:] == "Alive":
-                    wifeName.append(Ind[1][5:])
-    wr.write("List of living married \n" + str(husbName) + "\n" + str(wifeName))
+                    living.append(Ind[1][5:])
+    wr.write("List of living married \n" + str(living))
