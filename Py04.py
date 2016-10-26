@@ -12,6 +12,7 @@ from US21 import correctgender
 from US22 import UniqueIDs
 from US23 import uniqueIndividuals
 from US27 import individual_ages
+from US28 import orderSiblingsByAge
 from US29 import ListDeceased
 from US30 import livingMarried
 from US31 import all_living_singles
@@ -165,6 +166,9 @@ uniqueIndividuals(IndList,wr)
 
 #US27
 individual_ages(IndList,wr)
+
+#US28
+orderSiblingsByAge(IndList, FamList, wr)
 
 #US29
 ListDeceased(IndList,wr)

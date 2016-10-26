@@ -17,11 +17,11 @@ Individuals
 | I12 |  Hala Saleem  |  F  | 1984-01-01 |   Alive    |
 | I13 |   Renad Arab  |  F  | 2017-12-01 |   Alive    |
 | I14 |  Faisal Arab  |  M  | 2018-09-30 |   Alive    |
-| I15 |  Faisal Arab  |  M  | 2018-11-05 |   Alive    |
-| I15 |   Renad Arab  |  F  | 2017-11-01 |   Alive    |
-| I17 |   Rayan Arab  |  M  | 2013-12-01 | 2016-10-11 |
-| I17 | Mohammed Arab |  M  | 1989-11-09 |   Alive    |
-| I18 |   Sara Arab   |  F  | 2016-12-20 |   Alive    |
+| I15 |  Faisal Setia |  M  | 2018-11-05 |   Alive    |
+| I16 |   Rayan Arab  |  M  | 2013-12-01 | 2016-10-11 |
+| I17 |   Sara Arab   |  F  | 2016-12-20 |   Alive    |
+| I18 |  Rehnad Arab  |  F  | 2017-11-01 |   Alive    |
+| I19 | Mohammed Arab |  M  | 1989-11-09 |   Alive    |
 +-----+---------------+-----+------------+------------+
 
 Families
@@ -35,7 +35,7 @@ Families
 +----+--------------+--------------+
 
 US01 - Date before current date
-5 date are after 2016-10-26['2017-12-01', '2018-09-30', '2018-11-05', '2017-11-01', '2016-12-20']
+5 date are after 2016-10-26['2017-12-01', '2018-09-30', '2018-11-05', '2016-12-20', '2017-11-01']
 
 US02 - Birth before Marriage
 Birth of Ali Idrisi occurs after his marriage
@@ -72,7 +72,7 @@ Dawood
 Idrisi
 Arab
 Arab
-Arab
+Setia
 Arab
 Arab
 
@@ -82,7 +82,7 @@ US21  - Correct gender for role
 ['Rafif Arab', 'M'] is incorrect gender, Wife has to be female
 
 US22 - Unique IDs
-Error: Duplicate ID for['I15', 'I17']
+All IDs are correct
 
 US23 - Unique names and birthdates
 All name + birthdate pairs are unique
@@ -102,15 +102,33 @@ Name: Ibrahim Arab - Age: 76
 Name: Hala Saleem - Age: 32
 Name: Renad Arab --ERROR : Age cannot be after today
 Name: Faisal Arab --ERROR : Age cannot be after today
-Name: Faisal Arab --ERROR : Age cannot be after today
-Name: Renad Arab --ERROR : Age cannot be after today
+Name: Faisal Setia --ERROR : Age cannot be after today
 Name: Rayan Arab - Age: 2
-Name: Mohammed Arab - Age: 26
 Name: Sara Arab --ERROR : Age cannot be after today
+Name: Rehnad Arab --ERROR : Age cannot be after today
+Name: Mohammed Arab - Age: 26
+
+US28 - Order Siblings by Age
+F1
+Reham Idrisi , Age : [26]
+Maha Idrisi , Age : [26]
+Hassan Idrisi , Age : [31]
+F2
+Ahmed Idrisi , Age : [56]
+F3
+Rafif Arab , Age : [50]
+Sara Arab , Age : ['Invalid']
+Faisal Arab , Age : ['Invalid']
+Rehnad Arab , Age : ['Invalid']
+Renad Arab , Age : ['Invalid']
+F4
+Faisal Dawood , Age : [46]
+Noura Dawood , Age : [51]
+
 
 US29 - List deceased
 I4	Ali Idrisi	died in 1940-06-11
-I17	Rayan Arab	died in 2016-10-11
+I16	Rayan Arab	died in 2016-10-11
 
 US30 - List Living Married
 List of living married 
@@ -123,7 +141,7 @@ US31 - All Living Singles
 Individuals who are over 30 and single ['Faisal Dawood', 'Noura Dawood', 'Hassan Idrisi']
 
 US36 - List Recent Deaths
-I17	Rayan Arab	died in 2016-10-11
+I16	Rayan Arab	died in 2016-10-11
 
 US38  - Upcoming Birthdays
 3 upcoming birthdays ['1990-10-30', '1989-11-18', '1989-11-09']

@@ -144,7 +144,7 @@
 2 DATE 30 SEP 2018
 1 FAMS @F3@
 0 @I15@ INDI
-1 NAME Faisal /Arab/
+1 NAME Faisal /Setia/
 2 GIVN Faisal
 2 SURN Arab
 2 _MARNM Arab
@@ -152,16 +152,16 @@
 1 BIRT
 2 DATE 05 NOV 2018
 1 FAMS @F3@
-0 @I15@ INDI
-1 NAME Renad /Arab/
-2 GIVN Renad
+0 @I18@ INDI
+1 NAME Rehnad /Arab/
+2 GIVN Rehnad
 2 SURN Arab
 2 _MARNM Arab
 1 SEX F
 1 BIRT
 2 DATE 01 NOV 2017
 1 FAMS @F3@
-0 @I17@ INDI
+0 @I16@ INDI
 1 NAME Rayan /Arab/
 2 GIVN Rayan
 2 SURN Arab
@@ -172,7 +172,7 @@
 1 DEAT
 2 DATE 11 OCT 2016
 1 FAMS @F3@
-0 @I17@ INDI
+0 @I19@ INDI
 1 NAME Mohammed /Arab/
 2 GIVN Mohammed
 2 SURN Arab
@@ -181,7 +181,7 @@
 1 BIRT
 2 DATE 09 NOV 1989
 1 FAMS @F3@
-0 @I18@ INDI
+0 @I17@ INDI
 1 NAME Sara /Arab/
 2 GIVN Sara
 2 SURN Arab
