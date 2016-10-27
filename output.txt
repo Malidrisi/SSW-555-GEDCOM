@@ -22,6 +22,17 @@ Individuals
 | I17 |   Sara Arab   |  F  | 2016-12-20 |   Alive    |
 | I18 |  Rehnad Arab  |  F  | 2017-11-01 |   Alive    |
 | I19 | Mohammed Arab |  M  | 1989-11-09 |   Alive    |
+| I20 | Himanshu Arab |  M  | 1990-12-20 |   Alive    |
+| I21 |  Dorris Arab  |  F  | 1991-12-20 |   Alive    |
+| I22 |   Sarah Arab  |  F  | 1988-12-20 |   Alive    |
+| I23 |  Gopesh Arab  |  M  | 1992-12-20 |   Alive    |
+| I24 |   Sahil Arab  |  M  | 1990-12-20 |   Alive    |
+| I25 |   Jigar Arab  |  M  | 1997-12-20 |   Alive    |
+| I26 |  Sanket Arab  |  M  | 1996-12-20 |   Alive    |
+| I27 |   Riya Arab   |  F  | 1994-12-20 |   Alive    |
+| I28 |   Manan Arab  |  M  | 1999-12-20 |   Alive    |
+| I29 |   Deep Arab   |  F  | 2000-12-20 |   Alive    |
+| I30 |   Sapna Arab  |  F  | 2010-12-20 |   Alive    |
 +-----+---------------+-----+------------+------------+
 
 Families
@@ -35,7 +46,7 @@ Families
 +----+--------------+--------------+
 
 US01 - Date before current date
-5 date are after 2016-10-26['2017-12-01', '2018-09-30', '2018-11-05', '2016-12-20', '2017-11-01']
+5 date are after 2016-10-27['2017-12-01', '2018-09-30', '2018-11-05', '2016-12-20', '2017-11-01']
 
 US02 - Birth before Marriage
 Birth of Ali Idrisi occurs after his marriage
@@ -60,7 +71,8 @@ Hala Saleem got married before she turned 14
 US15 - Fewer than 15 siblings
 3 siblings in family F1
 1 siblings in family F2
-5 siblings in family F3
+Family F3 has more than 15 children! 
+16 siblings in family F3
 2 siblings in family F4
 
 
@@ -73,6 +85,12 @@ Idrisi
 Arab
 Arab
 Setia
+Arab
+Arab
+Arab
+Arab
+Arab
+Arab
 Arab
 Arab
 
@@ -107,6 +125,17 @@ Name: Rayan Arab - Age: 2
 Name: Sara Arab --ERROR : Age cannot be after today
 Name: Rehnad Arab --ERROR : Age cannot be after today
 Name: Mohammed Arab - Age: 26
+Name: Himanshu Arab - Age: 25
+Name: Dorris Arab - Age: 24
+Name: Sarah Arab - Age: 27
+Name: Gopesh Arab - Age: 23
+Name: Sahil Arab - Age: 25
+Name: Jigar Arab - Age: 18
+Name: Sanket Arab - Age: 19
+Name: Riya Arab - Age: 21
+Name: Manan Arab - Age: 16
+Name: Deep Arab - Age: 15
+Name: Sapna Arab - Age: 5
 
 US28 - Order Siblings by Age
 F1
@@ -116,11 +145,22 @@ Hassan Idrisi , Age : [31]
 F2
 Ahmed Idrisi , Age : [56]
 F3
+Sapna Arab , Age : [5]
+Deep Arab , Age : [15]
+Manan Arab , Age : [16]
+Jigar Arab , Age : [18]
+Sanket Arab , Age : [19]
+Riya Arab , Age : [21]
+Gopesh Arab , Age : [23]
+Dorris Arab , Age : [24]
+Himanshu Arab , Age : [25]
+Sahil Arab , Age : [25]
+Sarah Arab , Age : [27]
 Rafif Arab , Age : [50]
-Sara Arab , Age : ['Invalid']
-Faisal Arab , Age : ['Invalid']
 Rehnad Arab , Age : ['Invalid']
 Renad Arab , Age : ['Invalid']
+Sara Arab , Age : ['Invalid']
+Faisal Arab , Age : ['Invalid']
 F4
 Faisal Dawood , Age : [46]
 Noura Dawood , Age : [51]
