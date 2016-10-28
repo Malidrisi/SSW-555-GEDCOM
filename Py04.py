@@ -176,11 +176,11 @@ ListDeceased(IndList,wr)
 #US30
 livingMarried(IndList, FamList, wr)
 
-#US35
-ListRecentBirths(IndList,wr)
-
 #US31
 all_living_singles(IndList,wr)
+
+#US35
+ListRecentBirths(IndList,wr)
 
 #US36
 ListRecentDeaths(IndList,wr)

@@ -18,7 +18,7 @@ Individuals
 | I13 |   Renad Arab  |  F  | 2017-12-01 |   Alive    |
 | I14 |  Faisal Arab  |  M  | 2018-09-30 |   Alive    |
 | I15 |  Faisal Setia |  M  | 2018-11-05 |   Alive    |
-| I16 |   Rayan Arab  |  M  | 2013-12-01 | 2016-10-11 |
+| I16 |   Rayan Arab  |  M  | 2016-10-05 | 2016-10-11 |
 | I17 |   Sara Arab   |  F  | 2016-12-20 |   Alive    |
 | I18 |  Rehnad Arab  |  F  | 2017-11-01 |   Alive    |
 | I19 | Mohammed Arab |  M  | 1989-11-09 |   Alive    |
@@ -121,7 +121,7 @@ Name: Hala Saleem - Age: 32
 Name: Renad Arab --ERROR : Age cannot be after today
 Name: Faisal Arab --ERROR : Age cannot be after today
 Name: Faisal Setia --ERROR : Age cannot be after today
-Name: Rayan Arab - Age: 2
+Name: Rayan Arab - Age: 0
 Name: Sara Arab --ERROR : Age cannot be after today
 Name: Rehnad Arab --ERROR : Age cannot be after today
 Name: Mohammed Arab - Age: 26
@@ -174,11 +174,11 @@ US30 - List Living Married
 List of living married 
 ['Ahmed Idrisi', 'Rafif Arab', 'Meryam Albar', 'Ibrahim Arab', 'Hala Saleem', 'Meryam Albar', 'Sami Dawood']
 
-US36 - List Recent Births
-No one was born recently
-
 US31 - All Living Singles
 Individuals who are over 30 and single ['Faisal Dawood', 'Noura Dawood', 'Hassan Idrisi']
+
+US35 - List Recent Births
+I16	Rayan Arab	was born in 2016-10-05
 
 US36 - List Recent Deaths
 I16	Rayan Arab	died in 2016-10-11

@@ -2,7 +2,7 @@ from datetime import date
 import datetime
 def ListRecentBirths(IndList,wr):
     count= 0
-    wr.write("\n\nUS36 - List Recent Births")
+    wr.write("\n\nUS35 - List Recent Births")
     for Ind in IndList:
         if 0 <= (date.today() - datetime.datetime.strptime(Ind[3][10:], '%Y-%m-%d').date()).days <= 30:
             count= count + 1 
