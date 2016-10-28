@@ -1,30 +1,30 @@
-from datetime import datetime, timedelta
+from datetime import date, timedelta
 import datetime
 
-result =[]
-now = datetime.datetime.now().date()
-for daterange in range(30):
-    result = result + [(now + timedelta(daterange))]
-   
 def GetDate(birthday):
     if birthday[4][10:] == "Alive":
-        return (datetime.datetime.strptime(birthday[3][10:].strip(), '%Y-%m-%d').date())
+        return (birthday[3][15:])
     else:
         pass
         
 def UpcomingBirthday(IndList,wr):
-    flag = False
-    wr.write("\n\nUS38  - Upcoming Birthdays")
+    wr.write("\n\nUS38  - Upcoming Birthdays\n")
+    now = date.today()
+    then = now + timedelta(days=30)
+    monthdays = []
+    while now <= then:
+        monthdays = monthdays + ["{}-{:02d}".format(now.month,now.day)]
+        now += timedelta(days=1)
+    count = 0
     DOB = []
     for ind in IndList:
-        if GetDate(ind) in result:
-            DOB = DOB + [str(GetDate(ind))]
-            flag = True
+        if GetDate(ind) in monthdays and int(now.year) > int(ind[3][10:14]):
+            DOB = DOB + [ind[3][10:]]
+            count += 1
         else:
-            continue
-                   
-    if flag == False:
-        wr.write ("\nNo upcoming birthdays")
+            continue             
+    if count == 0:
+        wr.write ("No upcoming birthdays")
     else:
-        output = "\nUpcoming birthdays" + str(DOB)
+        output = str(count) + " upcoming birthdays " + str(DOB)
         wr.write(output)
