@@ -11,6 +11,8 @@ from US16 import male_LastName
 from US21 import correctgender
 from US22 import UniqueIDs
 from US23 import uniqueIndividuals
+from US24 import UniqueFamiliesBySpouses
+from US25 import UniqueFirstNamesInFamilies
 from US27 import individual_ages
 from US28 import orderSiblingsByAge
 from US29 import ListDeceased
@@ -163,6 +165,12 @@ UniqueIDs(IndList,wr)
 
 #US23
 uniqueIndividuals(IndList,wr)
+
+#US24
+UniqueFamiliesBySpouses(IndList,FamList,wr)
+
+#US25
+UniqueFirstNamesInFamilies(IndList,FamList,wr)
 
 #US27
 individual_ages(IndList,wr)

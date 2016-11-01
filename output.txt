@@ -43,10 +43,11 @@ Families
 | F2 |  Ali Idrisi  | Meryam Albar |
 | F3 | Ibrahim Arab | Hala Saleem  |
 | F4 | Sami Dawood  | Meryam Albar |
+| F6 | Sami Dawood  | Meryam Albar |
 +----+--------------+--------------+
 
 US01 - Date before current date
-5 date are after 2016-10-27['2017-12-01', '2018-09-30', '2018-11-05', '2016-12-20', '2017-11-01']
+5 date are after 2016-11-01['2017-12-01', '2018-09-30', '2018-11-05', '2016-12-20', '2017-11-01']
 
 US02 - Birth before Marriage
 Birth of Ali Idrisi occurs after his marriage
@@ -73,7 +74,8 @@ US15 - Fewer than 15 siblings
 1 siblings in family F2
 Family F3 has more than 15 children! 
 16 siblings in family F3
-2 siblings in family F4
+3 siblings in family F4
+2 siblings in family F6
 
 
 US16 - Male Last Names
@@ -104,6 +106,12 @@ All IDs are correct
 
 US23 - Unique names and birthdates
 All name + birthdate pairs are unique
+
+US24 - Unique families by spouses
+ERROR: a family with the same husband name and marriage date already exists ['Sami', '1980-11-03']
+
+US25 - Unique First Names In Families
+Family F4 has duplicated names ['Sami', 'Meryam', 'Faisal', 'Faisal', 'Noura']
 
 US27 - Include individual ages
 Name: Maha Idrisi - Age: 26
@@ -162,6 +170,9 @@ Renad Arab , Age : ['Invalid']
 Sara Arab , Age : ['Invalid']
 Faisal Arab , Age : ['Invalid']
 F4
+Faisal Dawood , Age : [46, 46]
+Noura Dawood , Age : [51]
+F6
 Faisal Dawood , Age : [46]
 Noura Dawood , Age : [51]
 
@@ -172,7 +183,7 @@ I16	Rayan Arab	died in 2016-10-11
 
 US30 - List Living Married
 List of living married 
-['Ahmed Idrisi', 'Rafif Arab', 'Meryam Albar', 'Ibrahim Arab', 'Hala Saleem', 'Meryam Albar', 'Sami Dawood']
+['Ahmed Idrisi', 'Rafif Arab', 'Meryam Albar', 'Ibrahim Arab', 'Hala Saleem', 'Meryam Albar', 'Sami Dawood', 'Meryam Albar', 'Sami Dawood']
 
 US31 - All Living Singles
 Individuals who are over 30 and single ['Faisal Dawood', 'Noura Dawood', 'Hassan Idrisi']
@@ -184,7 +195,8 @@ US36 - List Recent Deaths
 I16	Rayan Arab	died in 2016-10-11
 
 US38  - Upcoming Birthdays
-3 upcoming birthdays ['1990-10-30', '1989-11-18', '1989-11-09']
+3 upcoming birthdays ['1965-12-01', '1989-11-18', '1989-11-09']
 
 US39 - List Upcoming Anniversaries
 The Anniversary for family F4 is in 2016-11-03
+The Anniversary for family F6 is in 2016-11-03
