@@ -4,8 +4,8 @@ Individuals
 |  ID |      Name     | SEX | Birth Date | Deat Date  |
 +-----+---------------+-----+------------+------------+
 |  I1 |  Maha Idrisi  |  F  | 1990-10-30 |   Alive    |
-|  I2 |  Ahmed Idrisi |  F  | 1960-01-13 |   Alive    |
-|  I3 |   Rafif Arab  |  M  | 1965-12-01 |   Alive    |
+|  I2 |  Ahmed Idrisi |  F  | 1960-01-13 | 1970-02-11 |
+|  I3 |   Rafif Arab  |  M  | 1965-12-01 | 1970-06-11 |
 |  I4 |   Ali Idrisi  |  M  | 1962-08-07 | 1940-06-11 |
 |  I5 |  Meryam Albar |  F  | 1941-08-12 |   Alive    |
 |  I6 |  Sami Dawood  |  M  | 1860-04-24 |   Alive    |
@@ -47,7 +47,7 @@ Families
 +----+--------------+--------------+
 
 US01 - Date before current date
-5 date are after 2016-11-01['2017-12-01', '2018-09-30', '2018-11-05', '2016-12-20', '2017-11-01']
+5 date are after 2016-11-07['2017-12-01', '2018-09-30', '2018-11-05', '2016-12-20', '2017-11-01']
 
 US02 - Birth before Marriage
 Birth of Ali Idrisi occurs after his marriage
@@ -57,9 +57,15 @@ Birth of Hala Saleem occurs after her marriage
 US03 - Birth before death
 Birth of Ali Idrisi	1962-08-07 should occur before death 1940-06-11
 
+US04 - Marriage Before Divorce
+Marriage of Ahmed Idrisi and Rafif Arab occurs after their divorce date
+
 US05 - Marriage before Death
 Death of Ali Idrisi occurs before his marriage
 
+
+US06 - Divorce Before Death
+Divorce of Ibrahim Arab and Hala Saleem occurs after their death date
 
 US07 - Less then 150 years old
 I6	Sami Dawood is more than 50 years old
@@ -132,7 +138,7 @@ Name: Faisal Setia --ERROR : Age cannot be after today
 Name: Rayan Arab - Age: 0
 Name: Sara Arab --ERROR : Age cannot be after today
 Name: Rehnad Arab --ERROR : Age cannot be after today
-Name: Mohammed Arab - Age: 26
+Name: Mohammed Arab - Age: 27
 Name: Himanshu Arab - Age: 25
 Name: Dorris Arab - Age: 24
 Name: Sarah Arab - Age: 27
@@ -178,25 +184,26 @@ Noura Dawood , Age : [51]
 
 
 US29 - List deceased
+I2	Ahmed Idrisi	died in 1970-02-11
+I3	Rafif Arab	died in 1970-06-11
 I4	Ali Idrisi	died in 1940-06-11
 I16	Rayan Arab	died in 2016-10-11
 
 US30 - List Living Married
 List of living married 
-['Ahmed Idrisi', 'Rafif Arab', 'Meryam Albar', 'Ibrahim Arab', 'Hala Saleem', 'Meryam Albar', 'Sami Dawood', 'Meryam Albar', 'Sami Dawood']
+['Meryam Albar', 'Ibrahim Arab', 'Hala Saleem', 'Meryam Albar', 'Sami Dawood', 'Meryam Albar', 'Sami Dawood']
 
 US31 - All Living Singles
 Individuals who are over 30 and single ['Faisal Dawood', 'Noura Dawood', 'Hassan Idrisi']
 
 US35 - List Recent Births
-I16	Rayan Arab	was born in 2016-10-05
+No one was born recently
 
 US36 - List Recent Deaths
 I16	Rayan Arab	died in 2016-10-11
 
 US38  - Upcoming Birthdays
-3 upcoming birthdays ['1965-12-01', '1989-11-18', '1989-11-09']
+2 upcoming birthdays ['1989-11-18', '1989-11-09']
 
 US39 - List Upcoming Anniversaries
-The Anniversary for family F4 is in 2016-11-03
-The Anniversary for family F6 is in 2016-11-03
+No Upcoming Anniversary
