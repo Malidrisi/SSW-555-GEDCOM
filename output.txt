@@ -47,7 +47,7 @@ Families
 +----+--------------+--------------+
 
 US01 - Date before current date
-5 date are after 2016-11-07['2017-12-01', '2018-09-30', '2018-11-05', '2016-12-20', '2017-11-01']
+5 date are after 2016-11-14['2017-12-01', '2018-09-30', '2018-11-05', '2016-12-20', '2017-11-01']
 
 US02 - Birth before Marriage
 Birth of Ali Idrisi occurs after his marriage
@@ -128,7 +128,7 @@ Name: Meryam Albar - Age: 75
 Name: Sami Dawood - Age: 156
 Name: Faisal Dawood - Age: 46
 Name: Noura Dawood - Age: 51
-Name: Reham Idrisi - Age: 26
+Name: Reham Idrisi - Age: 27
 Name: Hassan Idrisi - Age: 31
 Name: Ibrahim Arab - Age: 76
 Name: Hala Saleem - Age: 32
@@ -153,8 +153,8 @@ Name: Sapna Arab - Age: 5
 
 US28 - Order Siblings by Age
 F1
-Reham Idrisi , Age : [26]
 Maha Idrisi , Age : [26]
+Reham Idrisi , Age : [27]
 Hassan Idrisi , Age : [31]
 F2
 Ahmed Idrisi , Age : [56]
@@ -190,7 +190,6 @@ I4	Ali Idrisi	died in 1940-06-11
 I16	Rayan Arab	died in 2016-10-11
 
 US30 - List Living Married
-List of living married 
 ['Meryam Albar', 'Ibrahim Arab', 'Hala Saleem', 'Meryam Albar', 'Sami Dawood', 'Meryam Albar', 'Sami Dawood']
 
 US31 - All Living Singles
@@ -200,10 +199,10 @@ US35 - List Recent Births
 No one was born recently
 
 US36 - List Recent Deaths
-I16	Rayan Arab	died in 2016-10-11
+No one died recently
 
 US38  - Upcoming Birthdays
-2 upcoming birthdays ['1989-11-18', '1989-11-09']
+1 upcoming birthdays ['1989-11-18']
 
 US39 - List Upcoming Anniversaries
 No Upcoming Anniversary

@@ -11,4 +11,4 @@ def livingMarried(IndList, FamList, wr):
             if ((Ind[0] == husbId) or (Ind[0] == wifeId)):
                 if Ind[4][10:] == "Alive":
                     living.append(Ind[1][5:])
-    wr.write("List of living married \n" + str(living))
+    wr.write(str(living))
